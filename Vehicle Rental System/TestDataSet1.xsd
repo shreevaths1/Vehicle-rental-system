@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TestDataSet1" targetNamespace="http://tempuri.org/TestDataSet1.xsd" xmlns:mstns="http://tempuri.org/TestDataSet1.xsd" xmlns="http://tempuri.org/TestDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" GeneratorFunctionsComponentClassName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" UserFunctionsComponentName="QueriesTableAdapter" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="VehicleRentConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="VehicleRentConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Vehicle_Rental_System.My.MySettings.GlobalReference.Default.VehicleRentConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="VehicleRentConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        [user].User_Id, [user].Username, booking.Booking_Id, vehicle.Vehicle_Id, vehicle.Vehicle_Type, vehicle.Vehicle_Brand, vehicle.Vehicle_Model, vehicle.Color, vehicle.License_number, vehicle.rate_per_day, 
+                         booking.Rental_Date, booking.Return_Date, booking.Rent_Duration, booking.Rent_Amount, payment.Payment_Id, payment.Payment_Date, payment.Card_Type
+FROM            [user] INNER JOIN
+                         booking ON [user].User_Id = booking.User_Id INNER JOIN
+                         payment ON [user].User_Id = payment.User_Id AND booking.Booking_Id = payment.Booking_Id INNER JOIN
+                         vehicle ON vehicle.Vehicle_Id = booking.Vehicle_Id</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="User_Id" DataSetColumn="User_Id" />
+              <Mapping SourceColumn="Username" DataSetColumn="Username" />
+              <Mapping SourceColumn="Booking_Id" DataSetColumn="Booking_Id" />
+              <Mapping SourceColumn="Vehicle_Id" DataSetColumn="Vehicle_Id" />
+              <Mapping SourceColumn="Vehicle_Type" DataSetColumn="Vehicle_Type" />
+              <Mapping SourceColumn="Vehicle_Brand" DataSetColumn="Vehicle_Brand" />
+              <Mapping SourceColumn="Vehicle_Model" DataSetColumn="Vehicle_Model" />
+              <Mapping SourceColumn="Color" DataSetColumn="Color" />
+              <Mapping SourceColumn="License_number" DataSetColumn="License_number" />
+              <Mapping SourceColumn="rate_per_day" DataSetColumn="rate_per_day" />
+              <Mapping SourceColumn="Rental_Date" DataSetColumn="Rental_Date" />
+              <Mapping SourceColumn="Return_Date" DataSetColumn="Return_Date" />
+              <Mapping SourceColumn="Rent_Duration" DataSetColumn="Rent_Duration" />
+              <Mapping SourceColumn="Rent_Amount" DataSetColumn="Rent_Amount" />
+              <Mapping SourceColumn="Payment_Id" DataSetColumn="Payment_Id" />
+              <Mapping SourceColumn="Payment_Date" DataSetColumn="Payment_Date" />
+              <Mapping SourceColumn="Card_Type" DataSetColumn="Card_Type" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TestDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="TestDataSet1" msprop:Generator_UserDSName="TestDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="User_Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnUser_Id" msprop:Generator_ColumnPropNameInRow="User_Id" msprop:Generator_ColumnPropNameInTable="User_IdColumn" msprop:Generator_UserColumnName="User_Id" type="xs:int" />
+              <xs:element name="Username" msprop:Generator_ColumnVarNameInTable="columnUsername" msprop:Generator_ColumnPropNameInRow="Username" msprop:Generator_ColumnPropNameInTable="UsernameColumn" msprop:Generator_UserColumnName="Username" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Booking_Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnBooking_Id" msprop:Generator_ColumnPropNameInRow="Booking_Id" msprop:Generator_ColumnPropNameInTable="Booking_IdColumn" msprop:Generator_UserColumnName="Booking_Id" type="xs:int" />
+              <xs:element name="Vehicle_Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnVehicle_Id" msprop:Generator_ColumnPropNameInRow="Vehicle_Id" msprop:Generator_ColumnPropNameInTable="Vehicle_IdColumn" msprop:Generator_UserColumnName="Vehicle_Id" type="xs:int" />
+              <xs:element name="Vehicle_Type" msprop:Generator_ColumnVarNameInTable="columnVehicle_Type" msprop:Generator_ColumnPropNameInRow="Vehicle_Type" msprop:Generator_ColumnPropNameInTable="Vehicle_TypeColumn" msprop:Generator_UserColumnName="Vehicle_Type">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Vehicle_Brand" msprop:Generator_ColumnVarNameInTable="columnVehicle_Brand" msprop:Generator_ColumnPropNameInRow="Vehicle_Brand" msprop:Generator_ColumnPropNameInTable="Vehicle_BrandColumn" msprop:Generator_UserColumnName="Vehicle_Brand">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Vehicle_Model" msprop:Generator_ColumnVarNameInTable="columnVehicle_Model" msprop:Generator_ColumnPropNameInRow="Vehicle_Model" msprop:Generator_ColumnPropNameInTable="Vehicle_ModelColumn" msprop:Generator_UserColumnName="Vehicle_Model">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Color" msprop:Generator_ColumnVarNameInTable="columnColor" msprop:Generator_ColumnPropNameInRow="Color" msprop:Generator_ColumnPropNameInTable="ColorColumn" msprop:Generator_UserColumnName="Color">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="License_number" msprop:Generator_ColumnVarNameInTable="columnLicense_number" msprop:Generator_ColumnPropNameInRow="License_number" msprop:Generator_ColumnPropNameInTable="License_numberColumn" msprop:Generator_UserColumnName="License_number" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="rate_per_day" msprop:Generator_ColumnVarNameInTable="columnrate_per_day" msprop:Generator_ColumnPropNameInRow="rate_per_day" msprop:Generator_ColumnPropNameInTable="rate_per_dayColumn" msprop:Generator_UserColumnName="rate_per_day" type="xs:long" />
+              <xs:element name="Rental_Date" msprop:Generator_ColumnVarNameInTable="columnRental_Date" msprop:Generator_ColumnPropNameInRow="Rental_Date" msprop:Generator_ColumnPropNameInTable="Rental_DateColumn" msprop:Generator_UserColumnName="Rental_Date" type="xs:dateTime" />
+              <xs:element name="Return_Date" msprop:Generator_ColumnVarNameInTable="columnReturn_Date" msprop:Generator_ColumnPropNameInRow="Return_Date" msprop:Generator_ColumnPropNameInTable="Return_DateColumn" msprop:Generator_UserColumnName="Return_Date" type="xs:dateTime" />
+              <xs:element name="Rent_Duration" msprop:Generator_ColumnVarNameInTable="columnRent_Duration" msprop:Generator_ColumnPropNameInRow="Rent_Duration" msprop:Generator_ColumnPropNameInTable="Rent_DurationColumn" msprop:Generator_UserColumnName="Rent_Duration" type="xs:int" />
+              <xs:element name="Rent_Amount" msprop:Generator_ColumnVarNameInTable="columnRent_Amount" msprop:Generator_ColumnPropNameInRow="Rent_Amount" msprop:Generator_ColumnPropNameInTable="Rent_AmountColumn" msprop:Generator_UserColumnName="Rent_Amount" type="xs:int" />
+              <xs:element name="Payment_Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnPayment_Id" msprop:Generator_ColumnPropNameInRow="Payment_Id" msprop:Generator_ColumnPropNameInTable="Payment_IdColumn" msprop:Generator_UserColumnName="Payment_Id" type="xs:int" />
+              <xs:element name="Payment_Date" msprop:Generator_ColumnVarNameInTable="columnPayment_Date" msprop:Generator_ColumnPropNameInRow="Payment_Date" msprop:Generator_ColumnPropNameInTable="Payment_DateColumn" msprop:Generator_UserColumnName="Payment_Date" type="xs:dateTime" />
+              <xs:element name="Card_Type" msprop:Generator_ColumnVarNameInTable="columnCard_Type" msprop:Generator_ColumnPropNameInRow="Card_Type" msprop:Generator_ColumnPropNameInTable="Card_TypeColumn" msprop:Generator_UserColumnName="Card_Type">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable1" />
+      <xs:field xpath="mstns:User_Id" />
+      <xs:field xpath="mstns:Booking_Id" />
+      <xs:field xpath="mstns:Vehicle_Id" />
+      <xs:field xpath="mstns:Payment_Id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

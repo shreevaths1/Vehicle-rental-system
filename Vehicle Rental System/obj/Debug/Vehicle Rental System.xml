@@ -1,0 +1,451 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Vehicle Rental System
+</name>
+</assembly>
+<members>
+<member name="T:Vehicle_Rental_System.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Vehicle_Rental_System.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Vehicle_Rental_System.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:Vehicle_Rental_System.My.Resources.Resources._1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Vehicle_Rental_System.My.Resources.Resources._2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Vehicle_Rental_System.My.Resources.Resources._2021_09_26__1_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Vehicle_Rental_System.My.Resources.Resources._3">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Vehicle_Rental_System.My.Resources.Resources._31">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Vehicle_Rental_System.My.Resources.Resources.chuttersnap_gts_Eh4g1lk_unsplash">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Vehicle_Rental_System.My.Resources.Resources.R">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.BookingDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.BookingDataSet.bookingDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.BookingDataSet.bookingRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.BookingDataSet.bookingRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.BookingDataSetTableAdapters.bookingTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.BookingDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Vehicle_Rental_System.BookingDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Vehicle_Rental_System.BookingDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Vehicle_Rental_System.BookingDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Vehicle_Rental_System.BookingDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Vehicle_Rental_System.BookingDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Vehicle_Rental_System.BookingDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Vehicle_Rental_System.BookingDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Vehicle_Rental_System.BookingDataSetTableAdapters.TableAdapterManager.UpdateAll(Vehicle_Rental_System.BookingDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.BookingDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.BookingDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.FeedbackDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.FeedbackDataSet.DataTable2DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.FeedbackDataSet.DataTable2Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.FeedbackDataSet.DataTable2RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.FeedbackDataSetTableAdapters.DataTable2TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.FeedbackDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Vehicle_Rental_System.FeedbackDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Vehicle_Rental_System.FeedbackDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Vehicle_Rental_System.FeedbackDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Vehicle_Rental_System.FeedbackDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Vehicle_Rental_System.FeedbackDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Vehicle_Rental_System.FeedbackDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Vehicle_Rental_System.FeedbackDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Vehicle_Rental_System.FeedbackDataSetTableAdapters.TableAdapterManager.UpdateAll(Vehicle_Rental_System.FeedbackDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.FeedbackDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.FeedbackDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.PaymentDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.PaymentDataSet.DataTable3DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.PaymentDataSet.DataTable3Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.PaymentDataSet.DataTable3RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.PaymentDataSetTableAdapters.DataTable3TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.PaymentDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Vehicle_Rental_System.PaymentDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Vehicle_Rental_System.PaymentDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Vehicle_Rental_System.PaymentDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Vehicle_Rental_System.PaymentDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Vehicle_Rental_System.PaymentDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Vehicle_Rental_System.PaymentDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Vehicle_Rental_System.PaymentDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Vehicle_Rental_System.PaymentDataSetTableAdapters.TableAdapterManager.UpdateAll(Vehicle_Rental_System.PaymentDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.PaymentDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.PaymentDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.TestDataSet1">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.TestDataSet1.DataTable1DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.TestDataSet1.DataTable1Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.TestDataSet1.DataTable1RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.TestDataSet1TableAdapters.DataTable1TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.TestDataSet1TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Vehicle_Rental_System.TestDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(Vehicle_Rental_System.TestDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Vehicle_Rental_System.TestDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(Vehicle_Rental_System.TestDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Vehicle_Rental_System.TestDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(Vehicle_Rental_System.TestDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Vehicle_Rental_System.TestDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Vehicle_Rental_System.TestDataSet1TableAdapters.TableAdapterManager.UpdateAll(Vehicle_Rental_System.TestDataSet1)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.TestDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.TestDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.VehicleRentDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.VehicleRentDataSet.userDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.VehicleRentDataSet.userRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.VehicleRentDataSet.userRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.VehicleRentDataSetTableAdapters.userTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.VehicleRentDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Vehicle_Rental_System.VehicleRentDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Vehicle_Rental_System.VehicleRentDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Vehicle_Rental_System.VehicleRentDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Vehicle_Rental_System.VehicleRentDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Vehicle_Rental_System.VehicleRentDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Vehicle_Rental_System.VehicleRentDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Vehicle_Rental_System.VehicleRentDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Vehicle_Rental_System.VehicleRentDataSetTableAdapters.TableAdapterManager.UpdateAll(Vehicle_Rental_System.VehicleRentDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.VehicleRentDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.VehicleRentDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.VehicleRentDataSet1">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.VehicleRentDataSet1.vehicleDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.VehicleRentDataSet1.vehicleRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.VehicleRentDataSet1.vehicleRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.VehicleRentDataSet1TableAdapters.vehicleTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.VehicleRentDataSet1TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Vehicle_Rental_System.VehicleRentDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(Vehicle_Rental_System.VehicleRentDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Vehicle_Rental_System.VehicleRentDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(Vehicle_Rental_System.VehicleRentDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Vehicle_Rental_System.VehicleRentDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(Vehicle_Rental_System.VehicleRentDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Vehicle_Rental_System.VehicleRentDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Vehicle_Rental_System.VehicleRentDataSet1TableAdapters.TableAdapterManager.UpdateAll(Vehicle_Rental_System.VehicleRentDataSet1)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.VehicleRentDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Vehicle_Rental_System.VehicleRentDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>
